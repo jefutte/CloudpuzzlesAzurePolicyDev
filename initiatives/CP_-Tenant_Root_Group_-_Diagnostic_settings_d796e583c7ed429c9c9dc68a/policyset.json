@@ -1,0 +1,52 @@
+{
+ "properties": {
+  "displayName": "CP -Tenant Root Group - Diagnostic settings",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Monitoring",
+   "version": "1.0.0",
+   "parameterScopes": {
+    "logAnalytics": "/providers/Microsoft.Management/managementGroups/9b00ed4f-da1e-4ee4-beec-09a4ee32ad31"
+   },
+   "createdBy": "c2f2b5ab-ebc4-4af7-9dfa-19cbcd3e9af5",
+   "createdOn": "2022-03-24T16:31:58.5517452Z",
+   "updatedBy": "d9c47f92-c88e-4e89-a6bf-dc03bd6e7e85",
+   "updatedOn": "2022-03-24T17:30:42.1340318Z",
+   "gitHubPolicy": {
+    "digest": "821cb558fe19398ba424978cc482c3767fd5609d",
+    "repoName": "jefutte/CloudpuzzlesAzurePolicy",
+    "commitSha": "3dfc491e82933209bdc849192e8f6d67fcafbc90",
+    "runUrl": "https://github.com/jefutte/CloudpuzzlesAzurePolicy/actions/runs/2035627564",
+    "filepath": "initiatives/CP-Tenant-Root-Group-Diagnostic-settings"
+   }
+  },
+  "parameters": {
+   "logAnalyticsWorkspace": {
+    "type": "string",
+    "metadata": {
+     "displayName": "Log Analytics Workspace"
+    },
+    "allowedValues": [
+     "/subscriptions/9767026d-b219-4bbd-9ab8-0b15c3040cfe/resourcegroups/cp-log-management/providers/microsoft.operationalinsights/workspaces/cp-log-management-prod"
+    ],
+    "defaultValue": "/subscriptions/9767026d-b219-4bbd-9ab8-0b15c3040cfe/resourcegroups/cp-log-management/providers/microsoft.operationalinsights/workspaces/cp-log-management-prod"
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Configure Azure Activity logs to stream to specified Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2465583e-4e78-4c15-b6be-a36cbc7c8b0f",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/9b00ed4f-da1e-4ee4-beec-09a4ee32ad31/providers/Microsoft.Authorization/policySetDefinitions/d796e583c7ed429c9c9dc68a",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "d796e583c7ed429c9c9dc68a"
+}

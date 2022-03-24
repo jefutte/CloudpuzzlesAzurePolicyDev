@@ -1,0 +1,38 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "b61cb1a5-d759-4481-8696-8d10b723cf3f",
+  "tenantId": "9b00ed4f-da1e-4ee4-beec-09a4ee32ad31",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "CP -Tenant Root Group - Diagnostic settings",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/9b00ed4f-da1e-4ee4-beec-09a4ee32ad31/providers/Microsoft.Authorization/policySetDefinitions/d796e583c7ed429c9c9dc68a",
+  "scope": "/providers/Microsoft.Management/managementGroups/9b00ed4f-da1e-4ee4-beec-09a4ee32ad31",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Jesper Fütterer Bing",
+   "parameterScopes": {},
+   "createdBy": "d9c47f92-c88e-4e89-a6bf-dc03bd6e7e85",
+   "createdOn": "2022-03-24T20:01:54.7778328Z",
+   "updatedBy": null,
+   "updatedOn": null,
+   "gitHubPolicy": {
+    "digest": "d6186726efce8aa1f91acb2194920278f3d31eee",
+    "repoName": "jefutte/CloudpuzzlesAzurePolicy",
+    "commitSha": "3dfc491e82933209bdc849192e8f6d67fcafbc90",
+    "runUrl": "https://github.com/jefutte/CloudpuzzlesAzurePolicy/actions/runs/2036351635",
+    "filepath": "initiatives/CP-Tenant-Root-Group-Diagnostic-settings/assign.CP-Tenant-Root-Group-Diagnostic-settings.json"
+   }
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/9b00ed4f-da1e-4ee4-beec-09a4ee32ad31/providers/Microsoft.Authorization/policyAssignments/b596c265bd7644729c4c5d38",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "b596c265bd7644729c4c5d38",
+ "location": "westeurope"
+}
